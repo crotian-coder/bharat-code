@@ -1,38 +1,221 @@
-.App {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #555;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Courses Section Styles */
+#courses {
+  padding: 50px;
+}
+
+.course-card {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+
+
+
+.course-image{
+  width: 400px;
+}
+
+.course-image > img{
+  width: 400px;
+}
+
+.course-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 50px;
+  background-color: #fff;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 50px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form button {
+  display: block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer p {
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 600px;
+}
+
+#close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#close-btn:hover,
+#close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.slick-slide > div {
+  margin: auto;
+  height: 800px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.slide-img{
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-details{
+  position: relative;
+
+}
+
+.course-details > h3{
+  position: absolute;
+  bottom: 350px;
+  /* left: 25%; */
+  width: 100%;
+  text-align: center;
+}
+
+.course-details > p{
+  position: absolute;
+  bottom: 250px;
+  /* left: 25%; */
+  text-align: center;
+  width: 100%;
+}
+
+.course-title{
+  font-size: 50px;
+}
+
+.course-description{
+  font-size: 30px;
 }
